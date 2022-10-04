@@ -11,43 +11,43 @@
 
 <body>
     <div id="welcome">
-        <h1>Welcome to my Tic Tac Toe</h1>
-        <span>Turn for : <strong style="margin-left: 3px;"> X</strong></span>
-        <button type="reset" id="btn">Reset</button>
+        <h1 style="font-size: 60px;">Welcome to my Tic Tac Toe</h1>
+        <span><H1 style="display: inline-block;">Turn for : <span style="margin-left: 3px; font-weight: 800;" id="playerTurn"> X</H3></span></span>
+        <button id="btn" style="width: 80px; height: 40px;" onclick="resetgame()">Reset</button>
     </div>
     <div class="big" style="display: flex; justify-content: center;">
-        <div id="container" style="width: 360px;margin-top: 25vh;">
+        <div id="container" style="width: 360px;margin-top: 10vh;">
             <div class="row1">
                 <div class="boxes1 innerbox1" style="display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px; font-size: 600%;" id="box0"></diV>
                 </div>
                 <div class="boxes2 innerbox1" style="display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box1"></diV>
                 </div>
                 <div class="boxes3 innerbox1" style="border-right-color: white;display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box2"></diV>
                 </div>
             </div>
             <div class="row1">
                 <div class="boxes1 innerbox1" style="display: flex; justify-content: center;" >
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box3"></diV>
                 </div>
                 <div class="boxes2 innerbox1" style="display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;"  id="box4"></diV>
                 </div>
                 <div class="boxes3 innerbox1" style="border-right-color: white;display: flex; justify-content: center; ">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box5"></diV>
                 </div>
             </div>
             <div class="row1">
                 <div class="boxes1 innerbox1" style="border-bottom-color: white;display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box6"></diV>
                 </div>
                 <div class="boxes2" style="border-bottom-color: white;display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box7"></diV>
                 </div>
                 <div class="boxes3 innerbox1" style="border-bottom-color: white;border-right-color: white;display: flex; justify-content: center;">
-                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;" onclick="pressXorO()"></diV>
+                    <diV class="innerbox" style="height: 90%;margin-top: 6px;width: 90px;font-size: 600%;" id="box8"></diV>
                 </div>
             </div>
         </div>
