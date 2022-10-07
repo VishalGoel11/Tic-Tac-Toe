@@ -9,6 +9,7 @@ var box = document.getElementsByClassName("innerbox");
 var whiwin= document.getElementById("whowin");
 var flag2=false;
 function win(winner){
+    if(flag2==false){
     if((box[0].innerText==="x" && box[1].innerText==="x"&& box[2].innerText==="x")|| (box[0].innerText==="o" && box[1].innerText==="o"&& box[2].innerText==="o")){
         box[0].style.backgroundColor="red";
         box[1].style.backgroundColor="red";
@@ -80,6 +81,7 @@ function win(winner){
         audio.play();
     }
 }
+}
 function draw()
 {
     whiwin.innerHTML="<h1>It's a draw .</h1>";
@@ -118,6 +120,7 @@ function resetgame(){
             box[index].style.backgroundColor="white";
             flag=0;
             whiwin.innerHTML="";
+            flag2=false;
             // console.log("vishu")
 
     })
